@@ -1,0 +1,68 @@
+{
+  "name": "sample",
+  "displayName": "Sample-Align",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "AolphWang",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [ ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sample.left",
+        "title": "Align Left (parentheses content)"
+      },
+      {
+        "command": "sample.center",
+        "title": "Align Center (parentheses content)"
+      },
+      {
+        "command": "sample.right",
+        "title": "Align Right (parentheses content)"
+      }
+    ],
+    "configuration": {
+      "title": "Parentheses Align",
+      "properties": {
+        "parenthesesAlign.defaultAlignment": {
+          "type": "string",
+          "enum": ["left", "center", "right"],
+          "default": "center",
+          "description": "Default alignment for parentheses content"
+        }
+      }
+    },
+    "keybindings": [
+    {
+      "command": "sample.left",
+      "key": "alt+l",
+      "when": "editorTextFocus"
+    },
+    {
+      "command": "sample.center",
+      "key": "alt+c",
+      "when": "editorTextFocus"
+    },
+    {
+      "command": "sample.right",
+      "key": "alt+r",
+      "when": "editorTextFocus"
+    }
+  ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qingling996/sample_align.git"
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  }
+}
