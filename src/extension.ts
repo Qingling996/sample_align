@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function registerAlignmentCommand(context: vscode.ExtensionContext, align: Alignment) {
-  const command = vscode.commands.registerCommand(`sample.${align}`, () => {
+  const command = vscode.commands.registerCommand(`adolph-align.${align}`, () => {
     const editor = vscode.window.activeTextEditor;
     if (!editor) return;
 

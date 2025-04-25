@@ -1,9 +1,9 @@
 {
-  "name": "sample",
+  "name": "adolph-align",
   "displayName": "Sample-Align",
   "description": "",
   "version": "0.0.1",
-  "publisher": "AolphWang",
+  "publisher": "AdolphWang",
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -16,15 +16,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "sample.left",
+        "command": "adolph-align.left",
         "title": "Align Left (parentheses content)"
       },
       {
-        "command": "sample.center",
+        "command": "adolph-align.center",
         "title": "Align Center (parentheses content)"
       },
       {
-        "command": "sample.right",
+        "command": "adolph-align.right",
         "title": "Align Right (parentheses content)"
       }
     ],
@@ -41,17 +41,17 @@
     },
     "keybindings": [
     {
-      "command": "sample.left",
+      "command": "adolph-align.left",
       "key": "alt+l",
       "when": "editorTextFocus"
     },
     {
-      "command": "sample.center",
+      "command": "adolph-align.center",
       "key": "alt+c",
       "when": "editorTextFocus"
     },
     {
-      "command": "sample.right",
+      "command": "adolph-align.right",
       "key": "alt+r",
       "when": "editorTextFocus"
     }
